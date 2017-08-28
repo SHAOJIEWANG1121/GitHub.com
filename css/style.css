@@ -1,0 +1,185 @@
+.body{margin-top: 0px;background-repeat: no-repeat;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;}
+section{position: relative}
+
+.web-title{position: absolute; margin-top: 23px; margin-left: 65px;}
+.web-title a{font-family: Times New Roman; font-size: 25px; letter-spacing: 1px;text-decoration: none;
+             color: black;}
+
+/*navi*/
+.navigator{width: 100%; position: absolute; left: 850px; padding: 30px; border: 0;z-index: 100;}
+.navigator ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+.navigator li{float: left;position :relative;}
+.navigator ul li a,.navigator ul li a:visited {
+display: block;
+text-align: center;
+text-decoration: none;
+width: 130px;
+height: 50px;
+color: #2c2c2c;
+border-width: 1px 1px 0 0
+line-height: 50px;
+font-size: 12px;
+font-family: helvetica;
+letter-spacing: 1px;
+}
+.navigator ul li:hover a {color: black;}
+.navigator ul li ul {display: none;}
+.navigator ul li:hover ul {display: block;position: absolute;top: 30px;left: 0;width: 130px;background-color:white;}
+.navigator ul li:hover ul li a {display: block;color: grey;font-size: 5px; height: 30px; margin-top: 10px; font-weight: lighter;font-style: italic;}
+.navigator ul li:hover ul li a:hover {color: black;}
+
+
+
+/*work*/
+.container{max-width: 1400px;margin:0 auto; padding: 40px 100px 20px;}
+.container:after{content: ""; display: block; clear: both}
+.row{margin: 0px -30px; margin-top: 30px}
+.col{width: 50%; float:left}
+.work{margin:-6px -30px;}
+.work figure{position:relative;overflow:hidden;-webkit-transition:cubic-bezier(.77,0,.175,1).5s;
+             transition:cubic-bezier(.77,0,.175,1).5s; box-sizing:border-box}
+.work figure img{width:100%; height:auto; display:block; -webkit-transform-origin:center;
+                 -ms-transform-origin:center; transform-origin:center;
+                 -webkit-transition:all 5s; transition:all 5s; position:relative;z-index:0}
+.work figure figcaption{position:absolute; display:block; right:0; bottom:0; top:0; width:100%;
+                        opacity:0;background-color: black;
+                        -webkit-transform-origin:center;
+                        -ms-transform-origin:center;
+                        transform-origin:center; -webkit-transition:cubic-bezier(0.42,0,0.58,1).10s;
+                        transition:cubic-bezier(0.42,0,0.58,1).10s; z-index:1; overflow:hidden;
+                        -webkit-clip-path:inset(0%);clip-path:inset(0%)}
+
+.work figure figcaption div{position:absolute; left:50%; top:50%; opacity:0;
+                            -webkit-transition:cubic-bezier(.77,0,.175,1).5s; transition:cubic-bezier(.77,0,.175,1).5s;
+                            -webkit-transition-delay:.2s; transition-delay:.2s; -webkit-transform:translate(-50%,-30%);
+                            -ms-transform:translate(-50%,-30%); transform:translate(-50%,-30%);
+                            width:500px;text-align:center}
+.work figure strong{width:100%; font-family:Helvetica; font-weight:normal; font-size:14px; letter-spacing: 2px; display:block; color:#ffffff}
+.work figure:hover figcaption{opacity:0.4; -webkit-clip-path:inset(0%);
+                              clip-path:inset(0%);}
+.work figure:hover div{-webkit-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%);
+                       transform:translate(-50%,-50%); opacity:1}
+.work figure:hover i{-webkit-transform:translate(-50%,-20px);
+                     -ms-transform:translate(-50%,-20px);
+                     transform:translate(-50%,-20px)}
+
+@media screen and (max-width:767 px)
+       {.container{padding: 30px 20px; max-width: 680px}
+        .col{width:100%}}
+
+@media screen and (max-width:1024px)
+       {.container{padding: 30px 20px; max-width: 720px;}
+        .col{width:50%}}
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-img{width: 100%; padding: 0; margin: 0;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 20px;
+  color: black;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 0px 0px 0px;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0px 0 0 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-family: Helvetica;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.show{width: 100%;}
+.show-img{width: 100%;}
+
+
+/* Next & previous buttons */
+.show-prev, .show-next {
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  width: auto;
+  margin-top: -22px;
+  color: blue;
+  padding: 20px;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 0px 0px 0px;
+
+}
+
+/* Position the "next button" to the right */
+.show-next {
+  right: 0;
+  border-radius: 0px 0 0 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.show-prev:hover, .show-next:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+/*about*/
+.about-container{position:absolute; right:70px; margin-top: 90px; width:890px;text-align: right; z-index: 50;}
+.about-title{font-family: Helvetica;}
+.identity{font-family: Times New Roman;margin-top: 0px;font-size: 14px;}
+.intro{font-family: Times New Roman; font-size: 12px;margin-top: 30px;}
+.italic{font-style: italic;}
+.profile-img{width:570px; margin-top: 40px;}
+.copyright{color: #8c8c8c}
+
+
+/*slideshowimg*/
+.show{max-width: 1280px; margin: 0 auto;}
+.show-img{padding-top: 80px;}
+
+.show-title{margin-top: 20px;}
+.show-title p{margin: 0 auto;text-align: center;font-family: Helvetica; font-weight: lighter; font-size: 8px;font-style: italic;color: #b4b4b4}
+.show-text{max-width: 920px; margin: 0 auto;padding-top: 10px;}
+.show-text p{text-align: justify;font-size: 14px; font-family: Helvetica; color: #454545}
