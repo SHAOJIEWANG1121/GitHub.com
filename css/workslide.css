@@ -47,7 +47,7 @@ letter-spacing: 1px;
 .intro{font-family: Times New Roman; font-size: 12px;margin-top: 30px;}
 .italic{font-style: italic;}
 .profile-img{width:570px; margin-top: 40px;}
-.copyright{color: #8c8c8c}
+.copyright{font-family: Times New Roman; font-size: 12px;margin-top: 30px;color: #8c8c8c}
 
 
 /*slideshowimg*/
