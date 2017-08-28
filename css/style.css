@@ -113,5 +113,5 @@ letter-spacing: 1px;
 .show-img{padding-top: 100px; width: 100%;}
 .show-title{margin-top: 20px;}
 .show-title p{margin: 0 auto;text-align: center;font-family: Helvetica; font-weight: lighter; font-size: 12px;font-style: italic;color: #b4b4b4}
-.show-text{max-width: 80%; margin: 0 auto;padding-top: 10px;}
+.show-text{max-width: 75%; margin: 0 auto;padding-top: 10px;}
 .show-text p{text-align: justify;font-size: 14px; font-family: Helvetica; color: #454545}
