@@ -29,7 +29,7 @@ letter-spacing: 1px;
 .navigator ul li:hover a {color: black;}
 .navigator ul li ul {display: none;}
 .navigator ul li:hover ul {display: block;position: absolute;top: 30px;left: 0;width: 130px;background-color:white;}
-.navigator ul li:hover ul li a {display: block;color: grey;font-size: 5px; height: 30px; margin-top: 10px; font-weight: lighter;font-style: italic;}
+.navigator ul li:hover ul li a {display: block;color: grey;font-size: 10px; height: 50px; margin-top: 10px; font-weight: lighter;font-style: italic;}
 .navigator ul li:hover ul li a:hover {color: black;}
 
 
