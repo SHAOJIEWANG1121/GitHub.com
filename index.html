@@ -52,73 +52,25 @@
 </section>
 
   <!--section-works-->
-    <div class="slideshow-container">
-<div class="mySlides fade">
-<a href="work/one-flew-over-no-man’s-land.html"><img class="slide-img" src="img/work1-0.jpg"></a>
+
+<div class="slides-box">
+    <ul class="slides">
+  <li style="background: url('img/slide1.jpg') center"></li>
+  <li style="background: url('img/slide2.jpg') center"></li>
+  <li style="background: url('img/slide3.jpg') center"></li>
+  <li style="background: url('img/slide4.jpg') center"></li>
+  <li style="background: url('img/slide5.jpg') center"></li>
+  <li style="background: url('img/slide6.jpg') center"></li>
+  <li style="background: url('img/slide7.jpg') center"></li>
+  <li style="background: url('img/slide8.jpg') center"></li>
+</ul>
 </div>
 
-<div class="mySlides fade">
-<a href="work/the-followers.html"><img class="slide-img" src="img/slide1.jpg"></a>
-</div>
-
-<div class="mySlides fade">
-<a href="work/play-together.html"><img class="slide-img" src="img/slide3.jpg"></a>
-</div>
-
-<div class="mySlides fade">
-<a href="work/the-midnight-kitchen.html"><img class="slide-img" src="img/slide4.jpg"></a>
-</div></a>
-
-<div class="mySlides fade">
-<a href="work/our-neighbours.html"><img class="slide-img" src="img/slide5.jpg"></a>
-</div></a>
-
-<div class="mySlides fade">
-<a href="work/my-grandmother.html"><img class="slide-img" src="img/slide6.jpg"></a>
-</div></a>
-
-<div class="mySlides fade">
-<a href="work/diego-and-frida.html"><img class="slide-img" src="img/slide8.jpg"></a>
-</div></a>
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-
-
-
-     </section>
-
-
-     <script>
-     var slideIndex = 1;
-     showSlides(slideIndex);
-
-     function plusSlides(n) {
-       showSlides(slideIndex += n);
-     }
-
-     function currentSlide(n) {
-       showSlides(slideIndex = n);
-     }
-
-     function showSlides(n) {
-       var i;
-       var slides = document.getElementsByClassName("mySlides");
-       var dots = document.getElementsByClassName("dot");
-       if (n > slides.length) {slideIndex = 1}
-       if (n < 1) {slideIndex = slides.length}
-       for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-       }
-
-       slides[slideIndex-1].style.display = "block";
-       dots[slideIndex-1].className += " active";
-     }
-     </script>
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script src="js/poposlides.js"></script>
+<script>
+      $(".slides").poposlides();
+  </script>
 
 
 </body>
