@@ -38,46 +38,11 @@ letter-spacing: 1px;
 .nav-container ul li:hover ul li a {display: block;color: grey;font-size: 12px; height: 20px; margin-top: 10px; font-weight: lighter;font-style: italic;line-height: 10px;}
 .nav-container ul li:hover ul li a:hover {color: black;}
 
-/*navigation*/
-/*mobile-navigation*/
+
 .navbar-toggle{
 	display: none;
 }
 
-.nav-item.open{
-	position: absolute;
-	display: none;
-	width: 100vw;
-	z-index: 1000;
-	background-color: #f2f2f2;
-	top: 100%;
-	left: -5vw;
-}
-
-.nav-item.open li{
-	display: block;
-
-}
-
-.nav-item .open li a{
-	border-bottom: none;
-}
-.nav-item.open li {
-
-	padding-left: 5%;
-	background-color: #f2f2f2;
-	transition: 1s bacground-color;
-}
-.nav-item .open li a:hover{
-	border-bottom: none;
-}
-
-.nav-item.open li:hover {
-	background-color: #eee;
-	transition: 1s backgroun-color;
-}
-
-/*mobile-navigation*/
 
 
 
@@ -144,7 +109,7 @@ letter-spacing: 1px;
 
 
 /*slideshowimg*/
-.show{max-width: 1440px; margin: 0 auto;}
+.show{max-width: 80%; margin: 0 auto;}
 .show-img{padding-top: 80px; width: 100%;}
 .show-title{margin-top: 20px;}
 .show-title p{margin: 0 auto;text-align: center;font-family: Helvetica; font-weight: lighter; font-size: 12px;font-style: italic;color: #b4b4b4}
