@@ -19,27 +19,27 @@
 
 <body>
 
- <div class="web-title"><span class="name"><a href="../index.html">SHAOJIE WANG</a></span></div>
-
   <!--navi-->
-<section id="navi">
-
-  <div class="navigator">
-  <ul>
+  <div class="navbar">
+    <div class="nav-container">
+      <span class="web-title"><a href="../index.html">SHAOJIE WANG<a></span>
+      <a class=navbar-toggle href="#">Menu</a>
+  <ul class="nav-item">
   <li><a href="../index.html">HOME</a></li>
   <li>
   <a href="#">ILLUSTRATION</a>
   <ul>
-  <li><a href="../work/one-flew-over-no-man’s-land.html">One Flew Over No Man's Land</a></li>
-  <li><a href="../work/the-followers.html">The Followers</a></li>
-  <li><a href="../work/play-together.html">Play Together</a></li>
-  <li><a href="../work/the-midnight-kitchen.html">The Midnight Kitchen</a></li>
-  <li><a href="../work/our-neighbours.html">Our Neighbours</a></li>
-  <li><a href="../work/passengers-outside-of-the-train.html">Passengers Outside of The Train</a></li>
-  <li><a href="../work/my-grandmother.html">My Grandmother</a></li>
-  <li><a href="../work/diego-and-frida.html">Diego and Frida</a></li>
+  <li><a href="one-flew-over-no-man’s-land.html">One Flew Over No Man's Land</a></li>
+  <li><a href="the-followers.html">The Followers</a></li>
+  <li><a href="play-together.html">Play Together</a></li>
+  <li><a href="the-midnight-kitchen.html">The Midnight Kitchen</a></li>
+  <li><a href="our-neighbours.html">Our Neighbours</a></li>
+  <li><a href="passengers-outside-of-the-train.html">Passengers Outside of The Train</a></li>
+  <li><a href="my-grandmother.html">My Grandmother</a></li>
+  <li><a href="diego-and-frida.html">Diego and Frida</a></li>
   </ul>
   </li>
+  <li><a href="#">DESIGN</a></li>
 
   <li><a href="../about.html">ABOUT</a></li>
 
@@ -49,10 +49,10 @@
   </div>
 
 
-</section>
+</div>
 
-  <!--section-works-->
-    <div class="slideshow-container">
+<!--section-works-->
+  <div class="slideshow-container">
 <div class="mySlides fade">
 <img class="slide-img" src="../img/work7-1.jpg">
 </div>
@@ -102,7 +102,7 @@
 
 
 <div class="show-title">
-  <p>Title: My Grandmother (Comics)</br>
+<p>Title: My Grandmother (Comics)</br>
 Medium: Screen Printing, Japanese Bookbinding</br>
 Size: 420mm*594mm</br>
 Date: 2017</br></p>
@@ -116,35 +116,37 @@ Date: 2017</br></p>
 </div>
 
 
-     </section>
+   </section>
 
 
-     <script>
-     var slideIndex = 1;
-     showSlides(slideIndex);
+   <script>
+   var slideIndex = 1;
+   showSlides(slideIndex);
 
-     function plusSlides(n) {
-       showSlides(slideIndex += n);
+   function plusSlides(n) {
+     showSlides(slideIndex += n);
+   }
+
+   function currentSlide(n) {
+     showSlides(slideIndex = n);
+   }
+
+   function showSlides(n) {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     if (n > slides.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
      }
 
-     function currentSlide(n) {
-       showSlides(slideIndex = n);
-     }
+     slides[slideIndex-1].style.display = "block";
+     dots[slideIndex-1].className += " active";
+   }
+   </script>
 
-     function showSlides(n) {
-       var i;
-       var slides = document.getElementsByClassName("mySlides");
-       var dots = document.getElementsByClassName("dot");
-       if (n > slides.length) {slideIndex = 1}
-       if (n < 1) {slideIndex = slides.length}
-       for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-       }
 
-       slides[slideIndex-1].style.display = "block";
-       dots[slideIndex-1].className += " active";
-     }
-     </script>
 
 
 </body>

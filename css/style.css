@@ -1,46 +1,87 @@
 html{overflow-x:hidden}
 body, ul {margin: 0;padding: 0;}
 
-body,html{height: 100%;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+body,html{height: 100%;}
+
+ul li {list-style-type: none;}
 
 .body{margin-top: 0px;background-repeat: no-repeat;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;}
 section{position: relative}
 
-.web-title{position: absolute; margin-top: 23px; margin-left: 65px;z-index: 100;}
+.web-title{float:left; margin-left: 0; padding: 20px; z-index: 100;}
 .web-title a{font-family: Times New Roman; font-size: 25px; letter-spacing: 1px;text-decoration: none;
              color: black;}
 
 /*navi*/
-.navigator{width: 100%; position: absolute; left: 850px; padding: 30px; border: 0;z-index: 100;}
-.navigator ul{
-padding: 0;
-margin: 0;
-list-style-type: none;
-}
-.navigator li{float: left;position :relative;}
-.navigator ul li a,.navigator ul li a:visited {
+.navbar {width: 100%;display: block;top: 0;left: 0;position: absolute;z-index: 100;}
+.nav-container {max-width: 90%;height: 100%;position: relative;display: block;margin-left: auto;margin-right: auto;}
+.nav-item {display: block;float: right;margin-right: 0;padding: 0;margin: 0px;}
+.nav-container ul{padding: 0;margin: 0;list-style-type: none;}
+.nav-container li{float: left;position :relative; }
+.nav-container ul li a,.nav-container ul li a:visited {
 display: block;
 text-align: center;
 text-decoration: none;
 width: 130px;
-height: 50px;
+height: 64px;
 color: #2c2c2c;
-border-width: 1px 1px 0 0
-line-height: 50px;
+border-width: 1px 1px 0 0;
+line-height: 64px;
 font-size: 12px;
 font-family: helvetica;
 letter-spacing: 1px;
 }
-.navigator ul li:hover a {color: black;}
-.navigator ul li ul {display: none;}
-.navigator ul li:hover ul {display: block;position: absolute;top: 30px;left: 0;width: 130px;background-color:white;}
-.navigator ul li:hover ul li a {display: block;color: grey;font-size: 9px; height: 30px; margin-top: 10px; font-weight: lighter;font-style: italic;}
-.navigator ul li:hover ul li a:hover {color: black;}
 
+.nav-container ul li:hover a {color: black;}
+.nav-container ul li ul {display: none;}
+.nav-container ul li:hover ul {display: block;position: absolute;top: 50px;left: 0;width: 130px;background-color:white;z-index: 200;}
+.nav-container ul li:hover ul li a {display: block;color: grey;font-size: 12px; height: 20px; margin-top: 10px; font-weight: lighter;font-style: italic;line-height: 10px;}
+.nav-container ul li:hover ul li a:hover {color: black;}
 
-ul li {
-    list-style-type: none;
+/*navigation*/
+/*mobile-navigation*/
+.navbar-toggle{
+	display: none;
 }
+
+.nav-item.open{
+	position: absolute;
+	display: none;
+	width: 100vw;
+	z-index: 1000;
+	background-color: #f2f2f2;
+	top: 100%;
+	left: -5vw;
+}
+
+.nav-item.open li{
+	display: block;
+
+}
+
+.nav-item .open li a{
+	border-bottom: none;
+}
+.nav-item.open li {
+
+	padding-left: 5%;
+	background-color: #f2f2f2;
+	transition: 1s bacground-color;
+}
+.nav-item .open li a:hover{
+	border-bottom: none;
+}
+
+.nav-item.open li:hover {
+	background-color: #eee;
+	transition: 1s backgroun-color;
+}
+
+/*mobile-navigation*/
+
+
+
+/*slide*/
 .slides-box {
     width: 100%;
     height: 100%;
@@ -93,7 +134,7 @@ ul li {
 
 
 /*about*/
-.about-container{position:absolute; right:70px; margin-top: 90px; width:890px;text-align: right; z-index: 50;}
+.about-container{position:absolute; right:100px; margin-top: 90px; width:890px;text-align: right; z-index: 50;}
 .about-title{font-family: Helvetica;}
 .identity{font-family: Times New Roman;margin-top: 0px;font-size: 14px;}
 .intro{font-family: Times New Roman; font-size: 12px;margin-top: 30px;}
@@ -103,10 +144,9 @@ ul li {
 
 
 /*slideshowimg*/
-.show{max-width: 1280px; margin: 0 auto;}
+.show{max-width: 1440px; margin: 0 auto;}
 .show-img{padding-top: 80px; width: 100%;}
-
 .show-title{margin-top: 20px;}
 .show-title p{margin: 0 auto;text-align: center;font-family: Helvetica; font-weight: lighter; font-size: 12px;font-style: italic;color: #b4b4b4}
-.show-text{max-width: 920px; margin: 0 auto;padding-top: 10px;}
+.show-text{max-width: 1020px; margin: 0 auto;padding-top: 10px;}
 .show-text p{text-align: justify;font-size: 14px; font-family: Helvetica; color: #454545}
