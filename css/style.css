@@ -110,7 +110,7 @@ letter-spacing: 1px;
 
 /*slideshowimg*/
 .show{max-width: 100%; margin: 0 auto;}
-.show-img{padding-top: 80px; width: 100%;}
+.show-img{padding-top: 100px; width: 100%;}
 .show-title{margin-top: 20px;}
 .show-title p{margin: 0 auto;text-align: center;font-family: Helvetica; font-weight: lighter; font-size: 12px;font-style: italic;color: #b4b4b4}
 .show-text{max-width: 1020px; margin: 0 auto;padding-top: 10px;}
