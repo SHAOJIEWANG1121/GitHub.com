@@ -1,0 +1,125 @@
+<!DOCTYPE  html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>SHAOJIE WANG</title>
+  <meta name="author" content="ShaojieWang">
+  <meta name="keywords" content="Design, Illustration, Graphic Design, UI, Brand,
+                                 Freelancer, Freelance, Job, Portfolio">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" media="screen"/>
+
+</head>
+
+<body>
+
+ <div class="web-title"><span class="name"><a href="index.html">SHAOJIE WANG</a></span></div>
+
+  <!--navi-->
+<section id="navi">
+
+  <div class="navigator">
+  <ul>
+  <li><a href="index.html">HOME</a></li>
+  <li>
+  <a href="#">ILLUSTRATION</a>
+  <ul>
+  <li><a href="work/one-flew-over-no-man’s-land.html">One Flew Over No Man's Land</a></li>
+  <li><a href="work/the-followers.html">The Followers</a></li>
+  <li><a href="work/play-together.html">Play Together</a></li>
+  <li><a href="work/the-midnight-kitchen.html">The Midnight Kitchen</a></li>
+  <li><a href="work/our-neighbours.html">Our Neighbours</a></li>
+  <li><a href="work/passengers-outside-of-the-train.html">Passengers Outside of The Train</a></li>
+  <li><a href="work/my-grandmother.html">My Grandmother</a></li>
+  <li><a href="work/diego-and-frida.html">Diego and Frida</a></li>
+  </ul>
+  </li>
+
+  <li><a href="about.html">ABOUT</a></li>
+
+  <li><a href="mailto:shaojielcc@gmail.com">CONTACT</a></li>
+
+  </ul>
+  </div>
+
+
+</section>
+
+  <!--section-works-->
+    <div class="slideshow-container">
+<div class="mySlides fade">
+<a href="work/one-flew-over-no-man’s-land.html"><img class="slide-img" src="img/work1-0.jpg"></a>
+</div>
+
+<div class="mySlides fade">
+<a href="work/the-followers.html"><img class="slide-img" src="img/slide1.jpg"></a>
+</div>
+
+<div class="mySlides fade">
+<a href="work/play-together.html"><img class="slide-img" src="img/slide3.jpg"></a>
+</div>
+
+<div class="mySlides fade">
+<a href="work/the-midnight-kitchen.html"><img class="slide-img" src="img/slide4.jpg"></a>
+</div></a>
+
+<div class="mySlides fade">
+<a href="work/our-neighbours.html"><img class="slide-img" src="img/slide5.jpg"></a>
+</div></a>
+
+<div class="mySlides fade">
+<a href="work/my-grandmother.html"><img class="slide-img" src="img/slide6.jpg"></a>
+</div></a>
+
+<div class="mySlides fade">
+<a href="work/diego-and-frida.html"><img class="slide-img" src="img/slide8.jpg"></a>
+</div></a>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+
+
+     </section>
+
+
+     <script>
+     var slideIndex = 1;
+     showSlides(slideIndex);
+
+     function plusSlides(n) {
+       showSlides(slideIndex += n);
+     }
+
+     function currentSlide(n) {
+       showSlides(slideIndex = n);
+     }
+
+     function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+     </script>
+
+
+</body>
+</html>
