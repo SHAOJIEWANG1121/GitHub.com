@@ -9,7 +9,7 @@ ul li {list-style-type: none;}
 section{position: relative}
 
 .web-title{float:left; margin-left: 0; padding: 20px; z-index: 100;}
-.web-title a{font-family: Times New Roman; font-size: 25px; letter-spacing: 1px;text-decoration: none;
+.web-title a{font-family: Times New Roman; font-size: 26px; letter-spacing: 1px;text-decoration: none;
              color: black;}
 
 /*navi*/
@@ -27,7 +27,7 @@ height: 64px;
 color: #2c2c2c;
 border-width: 1px 1px 0 0;
 line-height: 64px;
-font-size: 12px;
+font-size: 14px;
 font-family: helvetica;
 letter-spacing: 1px;
 }
@@ -38,11 +38,46 @@ letter-spacing: 1px;
 .nav-container ul li:hover ul li a {display: block;color: grey;font-size: 12px; height: 20px; margin-top: 10px; font-weight: lighter;font-style: italic;line-height: 10px;}
 .nav-container ul li:hover ul li a:hover {color: black;}
 
-
+/*navigation*/
+/*mobile-navigation*/
 .navbar-toggle{
 	display: none;
 }
 
+.nav-item.open{
+	position: absolute;
+	display: none;
+	width: 100vw;
+	z-index: 1000;
+	background-color: #f2f2f2;
+	top: 100%;
+	left: -5vw;
+}
+
+.nav-item.open li{
+	display: block;
+
+}
+
+.nav-item .open li a{
+	border-bottom: none;
+}
+.nav-item.open li {
+
+	padding-left: 5%;
+	background-color: #f2f2f2;
+	transition: 1s bacground-color;
+}
+.nav-item .open li a:hover{
+	border-bottom: none;
+}
+
+.nav-item.open li:hover {
+	background-color: #eee;
+	transition: 1s backgroun-color;
+}
+
+/*mobile-navigation*/
 
 
 
@@ -100,12 +135,12 @@ letter-spacing: 1px;
 
 /*about*/
 .about-container{position:absolute; right:100px; margin-top: 90px; width:890px;text-align: right; z-index: 50;}
-.about-title{font-family: Helvetica;}
-.identity{font-family: Times New Roman;margin-top: 0px;font-size: 14px;}
-.intro{font-family: Times New Roman; font-size: 12px;margin-top: 30px;}
+.about-title{font-family: Helvetica;font-size: 17px;}
+.identity{font-family: Times New Roman;margin-top: 0px;font-size: 15px;}
+.intro{font-family: Times New Roman; font-size: 13px;margin-top: 30px;}
 .italic{font-style: italic;}
 .profile-img{width:570px; margin-top: 40px;}
-.copyright{font-family: Times New Roman; font-size: 12px;margin-top: 30px;color: #8c8c8c}
+.copyright{color: #8c8c8c}
 
 
 /*slideshowimg*/
@@ -113,5 +148,5 @@ letter-spacing: 1px;
 .show-img{padding-top: 100px; width: 100%;}
 .show-title{margin-top: 20px;}
 .show-title p{margin: 0 auto;text-align: center;font-family: Helvetica; font-weight: lighter; font-size: 12px;font-style: italic;color: #b4b4b4}
-.show-text{max-width: 70%; margin: 0 auto;padding-top: 10px;}
+.show-text{max-width: 1020px; margin: 0 auto;padding-top: 10px;}
 .show-text p{text-align: justify;font-size: 14px; font-family: Helvetica; color: #454545}
