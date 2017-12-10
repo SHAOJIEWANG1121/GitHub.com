@@ -1,0 +1,173 @@
+/*
+* Novu Theme
+* Created by : Ahmed Essa
+* website : www.ahmedessa.net
+*/
+
+
+/* DEMO-5
+==================================================
+	- DEMO-5 -
+    - About page -
+	- Portfolio page -
+    - blog page -
+    - Responsive media queries -
+
+*/
+
+
+/* DEMO-5
+==================================================
+*/
+
+.ms-section {
+    background-size: cover !important;
+}
+
+.ms-left .ms-section {
+    padding: 0 0px 0 150px;
+}
+
+.ms-left .ms-section.ms-1 {
+    background: #eeeef0
+}
+
+.ms-left .ms-section.ms-1 h2,
+.ms-left .ms-section.ms-1 .subtitle {
+    color: #6f3f29;
+}
+
+.ms-left .ms-section.ms-2 h2,
+.ms-left .ms-section.ms-2 .subtitle {
+    color: #b39377;
+}
+
+.ms-left .ms-section.ms-3 h2,
+.ms-left .ms-section.ms-3 .subtitle {
+    color: #f1415d;
+}
+
+.ms-left .ms-section.ms-4 h2,
+.ms-left .ms-section.ms-4 .subtitle {
+    color: #396143;
+}
+
+.ms-left .ms-section.ms-2 {
+    background: #f5f5f5
+}
+
+.ms-left .ms-section.ms-3 {
+    background: #dedfd7
+}
+
+.ms-left .ms-section.ms-4 {
+    background: #fff
+}
+
+.ms-section h2 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700
+}
+
+.ms-section .subtitle {
+    font-size: 20px !important;
+    color: #626262;
+}
+
+#multiscroll-nav span {
+    left: -10px
+}
+
+
+/* About page
+==================================================*/
+.main-container {
+    margin: 50px auto
+}
+.about-hed {
+    background: -webkit-linear-gradient( rgba(225, 225, 225, .4), rgba(225, 225, 225, .4)), url(http://placehold.it/1920x1280);
+    background: linear-gradient( rgba(225, 225, 225, .4), rgba(225, 225, 225, .4)), url(http://placehold.it/1920x1280);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 100px 20px;
+
+}
+
+/* profile page
+==================================================*/
+.main-container.portfolio-page {
+    margin: 30px auto 30px;
+}
+.main-container .portfolio_filter li {
+    float: left
+}
+.main-container .portfolio .categories-grid .categories ul li a.active {
+    margin-left: 15px
+}
+
+
+
+/* Responsive media queries
+==================================================*/
+
+@media (max-width: 1124px) {
+    .ms-left .ms-section {
+        padding: 0 0px 0 100px;
+    }
+}
+
+@media (max-width: 1124px) {
+    .ms-left .ms-section {
+        padding: 0 0px 0 50px;
+    }
+}
+
+@media (max-width: 745px) {
+    .ms-left {
+        width: 100% !important;
+    }
+    .ms-right {
+        display: none!important;
+    }
+    .ms-left .ms-section {
+        padding: 0 50px 0 50px;
+    }
+    .ms-left .ms-section.ms-1 {
+        background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background-size: cover;
+        background-position: center center;
+    }
+    .ms-left .ms-section.ms-2 {
+        background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background-size: cover;
+        background-position: center center;
+    }
+    .ms-left .ms-section.ms-3 {
+        background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background-size: cover;
+        background-position: center center;
+    }
+    .ms-left .ms-section.ms-4 {
+        background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(http://placehold.it/1920x1280);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 620px) {
+    #multiscroll-nav {
+        display: none;
+    }
+    .ms-left .ms-section {
+        padding: 0 20px 0 20px;
+    }
+}

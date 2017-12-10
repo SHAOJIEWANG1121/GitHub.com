@@ -1,0 +1,513 @@
+/*
+* Novu Theme
+* Created by : Ahmed Essa
+* website : www.ahmedessa.net
+*/
+
+
+/* DEMO-2
+==================================================
+    - Preloader - 
+    - Header -
+	- Slider -
+    - About section -
+	- Portfolio section -
+    - Team section -
+    - blog section -
+    - Clients section -
+    - Contact section -
+    - Portfolio single page -
+    - Responsive media queries -
+    
+*/
+
+
+/* Header
+==================================================*/
+
+#preloader {
+    background-color: #333;
+}
+
+.logo-circle {
+    background: #d45f67;
+}
+
+@-webkit-keyframes white-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(225, 225, 225, 0.3);
+        -webkit-transition: box-shadow 0.3s ease-in-out;
+    }
+    100% {
+        box-shadow: 0 0 0 30px transparent;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-transition: box-shadow 0.4s ease-in-out;
+    }
+}
+
+@keyframes white-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(225, 225, 225, 0.3);
+        -webkit-transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    100% {
+        box-shadow: 0 0 0 30px transparent;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: box-shadow 0.4s ease-in-out;
+        transition: box-shadow 0.4s ease-in-out;
+    }
+}
+
+
+/* Header
+==================================================*/
+
+.main-logo {
+    background: #d45f67;
+    margin-top: 10px;
+    display: block;
+}
+
+
+/* Slider
+==================================================*/
+
+.slider-3 h2.sp-layer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em !important;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider-3 p.sp-layer.subtitle {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    white-space: normal !important;
+}
+
+.slider-3 .light-slider h2.sp-layer,
+.slider-3 .light-slider .slider-btn,
+.slider-3 .light-slider .slider-btn:hover {
+    color: #fff
+}
+
+.slider-3 .light-slider .slider-btn:after {
+    background-color: #fff;
+}
+
+.slider-3 {
+    text-align: center;
+}
+
+
+/* About section
+==================================================*/
+
+.about-style-3 {
+    padding: 100px 0 70px;
+}
+
+.h150 {
+    height: 150px;
+}
+
+
+/* Services section
+==================================================*/
+
+.box-border {
+    border: 1px solid #d45f67;
+    padding: 80px 30px;
+}
+
+.services-style-3 .icon-container {
+    padding: 20px;
+    color: #333;
+}
+
+.services-style-3 h3 {
+    font-size: 27px;
+}
+
+.services-style-3 .subtitle {
+    color: #999;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.services-style-3 .icon-box i {
+    color: #d45f67;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.services-style-3 .icon-container {
+    background: #fff;
+}
+
+#section-2.services-style-3 .bg-div-cover {
+    background: url(http://placehold.it/1920x1280);
+    background-size: cover;
+}
+
+#section-2.services-style-3 .bg-div-cover-2 {
+    background: url(http://placehold.it/1920x1280);
+    background-size: cover;
+}
+#section-2.services-style-3 .bg-div-cover-3 {
+    background: url(http://placehold.it/1920x1280);
+    background-size: cover;
+}
+
+
+/* Portfolio section
+==================================================*/
+
+.portfolio-style-3 {}
+
+.portfolio-style-3 .portfolio_item .portfolio_item_hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.portfolio-style-3 .portfolio_item .portfolio_item_hover .item_info span {
+    color: #333;
+}
+
+.portfolio-style-3 .portfolio_item .portfolio_item_hover .item_info em {
+    background-color: #d45f67;
+}
+
+.portfolio-style-3 .portfolio-border {
+    border: 1px solid #d45f67;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.portfolio-style-3 .portfolio .categories-grid .categories ul li {
+    float: left;
+}
+
+.portfolio-style-3 .portfolio_filter {
+    padding-left: 0;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio .categories-grid .categories ul li a.active {
+    background-color: #d45f67;
+    margin-left: 20px;
+}
+
+.portfolio-style-3 .subtitle {
+    color: #999;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.portfolio-style-3 .portfolio_item {
+    margin-bottom: 0;
+}
+
+
+/* Count section
+==================================================*/
+
+.count-body {
+    padding: 70px 50px;
+    background: #d45f67;
+    color: #fff;
+}
+
+.count-body .count-box {
+    float: none;
+    margin-right: 0;
+}
+
+.count-body .count {
+    font-size: 60px;
+    line-height: 70px;
+    height: 70px;
+}
+
+.count-body .count-name {
+    color: #fff;
+}
+
+.count {
+    font-family: 'bavroregular';
+    font-size: 35px;
+    display: block;
+    margin: 10px 0;
+}
+
+
+/* Team section
+==================================================*/
+
+#section-4 {
+    background: #fff;
+    color: #333;
+    padding-top: 50px;
+}
+
+.display-table {
+    display: table
+}
+
+.team-info-container {
+    padding: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.progress-info-container {
+    padding: 70px 50px 50px;
+}
+
+.progress-info-container .progress {
+    background: #f5f5f5;
+}
+
+.team-style-2 .team-overlay {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.team-style-2 .team-overlay ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d45f67;
+    text-align: center;
+    line-height: 30px;
+    color: #d45f67;
+}
+
+.team-style-2 .team-overlay ul li a:hover {
+    opacity: .5;
+}
+
+
+/* blog section
+==================================================*/
+
+#section-5 {
+    padding: 50px 0;
+    background: #f5f5f5
+}
+
+.blog_item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.blog_item h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: inherit;
+    letter-spacing: 1px;
+}
+
+.blog-content {
+    background-color: transparent;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+
+.blog-content .athour-img {
+    position: absolute;
+    width: 50px;
+    top: -30px
+}
+
+.blog-main-img {
+    border-radius: 5px;
+}
+
+.blog-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-img-container span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #d45f67;
+    border-radius: 25px;
+    z-index: 1;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.big-post .blog-img-container img {
+    border-radius: 5px;
+}
+
+.big-post:hover .content-overlay {
+    bottom: 0px;
+}
+
+.big-post a:hover,
+.big-post a:focus {
+    color: #f5f5f5;
+}
+
+.blog-text {
+    margin: 50px;
+}
+
+.quote-post .blog-content {
+    border-radius: 5px;
+    color: #fff;
+    background: #d45f67;
+    padding: 0.25em;
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-post .blog-content p {
+    font-style: italic;
+    font-size: 1.40em;
+    font-family: 'Lora', serif;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.quote-post .blog-content p::before {
+    content: '\201C';
+}
+
+.quote-post .blog-content p::after {
+    content: '\201D';
+}
+
+.quote-post .default-btn {
+    color: #fff;
+}
+
+.quote-post img {
+    margin-bottom: 20px;
+}
+
+.quote-post .default-btn:after {
+    background-color: #fff;
+}
+
+.blog-text .subtitle {
+    color: #999;
+}
+
+.blog_container p {
+    color: #999;
+}
+
+
+/* Clients section
+==================================================*/
+
+#section-6 {
+    background: #d45f67;
+    background-size: cover;
+    color: #f5f5f5;
+    padding: 100px 0 70px;
+}
+
+#section-6 .Job {
+    color: #fff;
+}
+
+
+/* Contact section
+==================================================*/
+
+#section-7 {
+    background: #fff;
+    padding: 0;
+}
+
+.mat-div::after {
+    background-color: #d45f67;
+}
+
+.is-active .mat-label {
+    color: #d45f67;
+}
+
+.contact-div {
+    margin-bottom: 0;
+}
+
+.padding-100 {
+    padding: 100px;
+}
+
+
+/* Responsive media queries
+==================================================*/
+
+@media (max-width: 990px) {
+    .h150 {
+        display: none;
+    }
+    #section-3 {
+        padding-top: 50px;
+    }
+    #section-5 {
+        padding-top: 0;
+    }
+    #section-2.services-style-3 .bg-div-cover,
+    #section-2.services-style-3 .bg-div-cover-2 {
+        display: none;
+    }
+    .portfolio .categories-grid .categories ul li a {
+        margin-left: 15px;
+    }
+    .count-body .count-box {
+        margin-bottom: 40px;
+    }
+    .team-info-container {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .slider-3 h2.sp-layer {
+        font-size: 2.5em !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .team-info-container,
+    .progress-info-container {
+        padding: 10px;
+    }
+    .box-border {
+        padding: 50px 10px;
+    }
+    .padding-100 {
+        padding: 50px 20px;
+    }
+    .slider-3 h2.sp-layer,
+    .slider-3 p.sp-layer.subtitle {
+        width: auto !important;
+    }
+    .slider-3 h2.sp-layer {
+        font-size: 2.5em !important;
+    }
+}
+
+@media (max-width: 450px) {}

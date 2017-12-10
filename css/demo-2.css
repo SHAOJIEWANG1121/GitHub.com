@@ -1,0 +1,128 @@
+
+/* Slider
+==================================================*/
+
+.slider-2 h2.sp-layer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em !important;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider-2 p.sp-layer.subtitle {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    white-space: normal !important;
+}
+
+.slider-2 .light-slider h2.sp-layer,
+.slider-2 .light-slider .slider-btn,
+.slider-2 .light-slider .slider-btn:hover {
+    color: #fff
+}
+
+.slider-2 .light-slider .slider-btn:after {
+    background-color: #fff;
+}
+
+.slider-2 {
+    text-align: center;
+}
+
+
+
+/* Portfolio section
+==================================================*/
+
+.portfolio-style-2 .portfolio_item .portfolio_item_hover {
+    background-color: rgba(51, 51, 51, .9);
+}
+
+.portfolio-style-2 .portfolio_item .portfolio_item_hover .item_info span {
+    color: #fff;
+}
+
+.portfolio-style-2 .portfolio_item .portfolio_item_hover .item_info em {
+    background-color: #ae895d;
+}
+
+.portfolio-style-2 .portfolio-border {
+    border: 1px solid #ae895d;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.portfolio .categories-grid .categories ul li a.active {
+    background-color: #ae895d;
+}
+
+
+
+/* Contact section
+==================================================*/
+
+#section-7 {
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), url(http://placehold.it/1920x1280);
+    background: linear-gradient( rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), url(http://placehold.it/1920x1280);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 30px 0;
+}
+
+.mat-div::after {
+    background-color: #ae895d;
+}
+
+.is-active .mat-label {
+    color: #ae895d;
+}
+
+
+/* Portfolio single page
+==================================================*/
+
+.portfolio-hed-style-2 {
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(http://placehold.it/1920x1280);
+    background: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(http://placehold.it/1920x1280);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 150px 20px;
+}
+
+
+/* Responsive media queries
+==================================================*/
+
+@media (max-width: 990px) {
+    .h150 {
+        display: none;
+    }
+    #section-3 {
+        padding-top: 50px;
+    }
+    #section-5 {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .slider-2 h2.sp-layer {
+        font-size: 2.5em !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .team-info-container {
+        padding: 10px;
+    }
+    .slider-2 h2.sp-layer,
+    .slider-2 p.sp-layer.subtitle {
+        width: auto !important;
+    }
+}

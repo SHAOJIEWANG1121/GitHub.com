@@ -1,0 +1,103 @@
+/*
+* Novo Theme
+* Created by : Ahmed Essa
+* website : www.ahmedessa.net
+*/
+
+
+/* DEMO-2
+==================================================
+    - Preloader -
+    - Header -
+    - About -
+	- Portfolio -
+    - blog -
+    - Contact -
+*/
+
+
+/* Preloader
+==================================================*/
+
+#preloader {
+    background-color: #333;
+}
+
+.logo-circle {
+    background: #7383B5;
+}
+
+@-webkit-keyframes white-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(225, 225, 225, 0.3);
+        -webkit-transition: box-shadow 0.3s ease-in-out;
+    }
+    100% {
+        box-shadow: 0 0 0 30px transparent;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-transition: box-shadow 0.4s ease-in-out;
+    }
+}
+
+@keyframes white-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(225, 225, 225, 0.3);
+        -webkit-transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    100% {
+        box-shadow: 0 0 0 30px transparent;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: box-shadow 0.4s ease-in-out;
+        transition: box-shadow 0.4s ease-in-out;
+    }
+}
+
+
+/* Header
+==================================================*/
+
+.main-logo {
+    background: #7383B5;
+}
+
+
+/* about section
+==================================================*/
+
+.about-section {
+    padding-top: 50px
+}
+.about-section .subtitle,
+.grey-color {
+    color: #999;
+}
+
+
+/* Portfolio section
+==================================================*/
+
+.portfolio-style-3 .portfolio .categories-grid .categories ul li a.active,
+.portfolio-style-3 .portfolio_item .portfolio_item_hover .item_info em {
+    background-color: #7383B5;
+}
+
+.filter-bg {
+    background: #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Contact section
+==================================================*/
+
+.mat-div::after {
+    background-color: #7383B5;
+}
+
+.is-active .mat-label {
+    color: #7383B5;
+}
