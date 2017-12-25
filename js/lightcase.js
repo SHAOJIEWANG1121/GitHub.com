@@ -53,8 +53,8 @@
 				cssTransitions: true,
 				speedIn: 250,
 				speedOut: 250,
-				maxWidth: 800,
-				maxHeight: 500,
+				maxWidth: 1920,
+				maxHeight: 1280,
 				forceWidth: false,
 				forceHeight: false,
 				liveResize: true,
@@ -87,8 +87,8 @@
 					data: {}
 				},
 				iframe: {
-					width: 800,
-					height: 500,
+					width: 1920,
+					height: 1280,
 					frameborder: 0
 				},
 				flash: {
