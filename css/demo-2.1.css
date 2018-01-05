@@ -87,8 +87,8 @@
 ==================================================*/
 
 .portfolio-hed-style-2 {
-    background: -webkit-linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/design1-banner.jpg);
-    background: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/design1-banner.jpg);
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/design2-banner.jpg);
+    background: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/design2-banner.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
