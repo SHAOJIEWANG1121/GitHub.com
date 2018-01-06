@@ -88,8 +88,8 @@
     margin: 50px auto
 }
 .about-hed {
-    background: -webkit-linear-gradient( rgba(225, 225, 225, .5), rgba(225, 225, 225, .5)), url(../img/design-banner.jpg);
-    background: linear-gradient( rgba(225, 225, 225, .5), rgba(225, 225, 225, .5)), url(../img/design-banner.jpg);
+    background: -webkit-linear-gradient( rgba(225, 225, 225, .1), rgba(225, 225, 225, .1)), url(../img/design-banner.jpg);
+    background: linear-gradient( rgba(225, 225, 225, .1), rgba(225, 225, 225, .1)), url(../img/design-banner.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
