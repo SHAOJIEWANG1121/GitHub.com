@@ -95,6 +95,15 @@
     padding: 150px 20px;
 }
 
+.portfolio-hed-style-3 {
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/design3-banner.jpg);
+    background: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/design3-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 150px 20px;
+}
+
 
 /* Responsive media queries
 ==================================================*/
