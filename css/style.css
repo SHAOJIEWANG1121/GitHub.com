@@ -435,6 +435,8 @@ h4 {
     font-family: 'texgyreadventorregular';
 }
 
+h5{color: white;}
+
 
 /* header
 ==================================================*/
@@ -1193,6 +1195,57 @@ footer .nav li a {
     transform: translateX(0);
 }
 
+
+/* Video lightbox section
+==================================================*/
+
+.parallax-window {
+    position: relative;
+    min-height: 400px;
+    background: url(../img/design0-show.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.video-overlay {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background: rgba(255, 255, 255, .0);
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.video-padding {
+    padding: 70px 20px;
+}
+
+.play-video {
+    color: #fff;
+    display: block;
+    margin: 40px auto;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.play-video i {
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.play-video:hover,
+.play-video:focus {
+    opacity: .8
+}
 
 /* Responsive media queries
 ==================================================*/
