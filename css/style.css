@@ -866,6 +866,23 @@ h2.sp-layer {
 /* Contact section
 ==================================================*/
 
+#section-7 {
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .4), rgba(255, 255, 255, .4));
+    background: linear-gradient( rgba(255, 255, 255, .4), rgba(255, 255, 255, .4));
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 30px 0;
+}
+
+.mat-div::after {
+    background-color: #ae895d;
+}
+
+.is-active .mat-label {
+    color: #ae895d;
+}
+
 
 .w-bg {
     background: rgba(255, 255, 255, .8);
